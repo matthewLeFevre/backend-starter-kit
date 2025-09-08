@@ -11,7 +11,8 @@ const Config = {
     production: []
   },
   httpHeaders: ['Content-Type', 'Authorization', 'x-api-key'],
-  httpMethods: ["POST", "PUT", "DELETE", "GET", "OPTIONS"]
+  httpMethods: ["POST", "PUT", "DELETE", "GET", "OPTIONS"],
+  awsRegion: "us-east-2"
 };
 
 export default function getConfig(key: keyof typeof Config) {

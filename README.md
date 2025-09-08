@@ -26,3 +26,11 @@ AWS S3
 pnpm install
 pnpm run dev
 ```
+
+### Enviornment Variables
+
+DB_USER
+DB_PASS
+DB_EXTRA
+
+BETTER_AUTH_SECRET

@@ -12,6 +12,13 @@ const auth = betterAuth({
   }),
   baseUrl: getConfig("betterAuthUrl"),
   trustedOrigins: getConfig("origins") as [],
+  advanced: {
+    defaultCookieAttributes: {
+      sameSite: "none",
+      secure: true,
+      httpOnly: true
+    }
+  },
   plugins: [
     apiKey(),
     admin()
